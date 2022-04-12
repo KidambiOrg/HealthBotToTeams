@@ -2,7 +2,7 @@
 Post messages to Teams via HealthBot and Power Automate
 
 ## Application Architecture
-![Health Bot To Teams](applicationarchitecture.png)
+![Health Bot To Teams](ApplicationArchitecture.png)
 
 ## Pre-Requisites
 1. Need permission to install apps in Teams
