@@ -39,5 +39,16 @@ The Azure function is responsible for generating the Health Bot JWT token. It le
 3. Click `Import` from the toolbar and select the `scenarios.zip` file.
 
 ## Health Bot Environment variables
-1 `SaveTeamsContextFlowUrl` needs to point to the URL of  Power Automate Flow `SaveTeamsContextFlow`
+1. `SaveTeamsContextFlowUrl` needs to point to the URL of  Power Automate Flow `SaveTeamsContextFlow`
 2. `SaveUserResponseFlowUrl` needs to point to the URL of Power Automate Flow `SaveUserResponseAndConfirmFlow`
+
+## Power App Environment Variables
+Following Environment variables needs to be set in Power Apps Solution
+
+1. HealthBotAPI - `https://bot-us.healthbot.microsoft.com/api/tenants/<<HEALTHBOT TENANT NAME>>/beginScenario`
+2. HealthBotConfirmScenarioToCall - `/scenarios/postconfirmationmessage`
+3. HealthBotScenarioToCall - `/scenarios/postnewmessage`
+4. HealthBotTokenAPI - Azure function Url
+5. HealthBotTokenAPIKey - Azure function Function-Key
+6. HealthBotTokenPayload - JSON object - `{"tenantName":"<<HEALTH BOT TENANT NAME>>","jWTSecret":"<<HEALTHBOT JWT SECRET>>" }`
+7. UserResponseStorageQueueKey - The storage account key
