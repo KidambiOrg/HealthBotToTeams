@@ -57,6 +57,7 @@ Following Environment variables needs to be set in Power Apps Solution
 1. Open A REST Client
 2. Make a POST command to the Power Automate Url for the Power Automate Flow - `PostMessageToTeamsChannelFlow`
 
+```
     curl --location --request POST '[INSERT PostMessageToTeamsChannelFlow URL]' \
         --header 'Content-Type: application/json' \
         --data-raw '{
@@ -64,3 +65,5 @@ Following Environment variables needs to be set in Power Apps Solution
             "teamName":"[TEAMS TEAM NAME]",
             "channelName":"[CHANNEL NAME]"
         }'
+
+```
