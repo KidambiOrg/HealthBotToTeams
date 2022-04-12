@@ -52,3 +52,15 @@ Following Environment variables needs to be set in Power Apps Solution
 5. HealthBotTokenAPIKey - Azure function Function-Key
 6. HealthBotTokenPayload - JSON object - `{"tenantName":"<<HEALTH BOT TENANT NAME>>","jWTSecret":"<<HEALTHBOT JWT SECRET>>" }`
 7. UserResponseStorageQueueKey - The storage account key
+
+## How to post a message
+1. Open A REST Client
+2. Make a POST command to the Power Automate Url for the Power Automate Flow - `PostMessageToTeamsChannelFlow`
+
+    curl --location --request POST '[INSERT PostMessageToTeamsChannelFlow URL]' \
+        --header 'Content-Type: application/json' \
+        --data-raw '{
+            "messageToPost":"Hi all, Yaw2 is waiting at the door. Who can help him?",
+            "teamName":"[TEAMS TEAM NAME]",
+            "channelName":"[CHANNEL NAME]"
+        }'
