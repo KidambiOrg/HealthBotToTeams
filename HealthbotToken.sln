@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthbotToken.API", "HealthbotToken.API\HealthbotToken.API.csproj", "{7CD1CAA1-8B13-4EEB-AF45-F858D7FEF3C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CD1CAA1-8B13-4EEB-AF45-F858D7FEF3C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD1CAA1-8B13-4EEB-AF45-F858D7FEF3C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD1CAA1-8B13-4EEB-AF45-F858D7FEF3C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD1CAA1-8B13-4EEB-AF45-F858D7FEF3C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A785A22C-7CC5-4298-A09A-3E7EBA7737CB}
+	EndGlobalSection
+EndGlobal
