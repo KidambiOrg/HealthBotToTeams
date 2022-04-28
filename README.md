@@ -14,6 +14,7 @@ Post messages to Teams via HealthBot and Power Automate
 
 ## Deploy Azure Function
 1. Deploy the `ToklenFunction` in `HealthBotToken.sln` to Azure.
+2. Make sure the `FUNCTIONS_WORKER_RUNTIME` app settings to "dotnet-isolated"
 
 ## Function Keys for Azure Function
 The Azure function is responsible for generating the Health Bot JWT token. It leverages, by default, Function Key. Configure [Function Keys](https://docs.microsoft.com/en-us/azure/azure-functions/security-concepts?tabs=v4#secure-operation) after deployment.
