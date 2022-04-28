@@ -37,6 +37,15 @@ The Azure function is responsible for generating the Health Bot JWT token. It le
 1. Go to Health Bot designer
 2. From the side bar menu, click Scenarios\Manage
 3. Click `Import` from the toolbar and select the `scenarios.zip` file.
+4. Importing does not import models. So need to create a model
+   1. Go to HealthBot Studio
+   2. Click on Language\Models on the left nav
+   3. Click `New` to  create a model.
+   4. For `Method` choose RegEx.
+   5. For `Regular Expression`, enter "/^hello$/"
+   6. For `Intent Mapping` choose "Hello_Teams" as the scenario
+5. When importing, allow all connections when prompted.
+   1. For GCC, the storage must be in Azure Gov.
 
 ## Health Bot Environment variables
 1. `SaveTeamsContextFlowUrl` needs to point to the URL of  Power Automate Flow `SaveTeamsContextFlow`
